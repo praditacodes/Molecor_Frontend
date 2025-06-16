@@ -4,8 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { CalendarIcon, ArrowRight } from "lucide-react";
-//import { Skeleton } from "@/components/ui/skeleton";
-//import { Button } from "@/components/ui/button";
+
 
 export default function BlogClient() {
   const [newsArticles, setNewsArticles] = useState([]);
