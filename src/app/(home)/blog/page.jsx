@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { CalendarIcon, ArrowRight } from "lucide-react";
+import Skeleton from '@/components/ui/skeleton';
+
 
 
 export default function BlogClient() {
