@@ -7,9 +7,9 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Share2, MessageSquare } from "lucide-react";
 import { format } from "date-fns";
-import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton";
-import { Card } from "@/components/ui/card";
+//import { Button } from "@/components/ui/button";
+//import { Skeleton } from "@/components/ui/skeleton";
+//import { Card } from "@/components/ui/card";
 
 export default function BlogPostClient({ slug }) {
   const [post, setPost] = useState(null);
