@@ -1,16 +1,3 @@
-// import type { NextConfig } from "next";
-
-// const nextConfig: NextConfig = {
-//   /* config options here */
-//   images: {
-//     domains: ["i.ibb.co"],
-//   },
-// };
-
-// export default nextConfig;
-
-
-
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
@@ -21,19 +8,25 @@ const nextConfig: NextConfig = {
         protocol: 'http',
         hostname: 'localhost',
         port: '8000',
-        pathname: '/media/**', // For your local development backend
+        pathname: '/**', // All local images
       },
       {
         protocol: 'https',
-        hostname: 'molecor-backend-2.onrender.com',
+        hostname: 'molecor-backend.onrender.com',
         port: '',
-        pathname: '/media/**', // For your live Render backend
+        pathname: '/**', // All backend images (news, case_studies, certificates, etc.)
       },
       {
         protocol: 'https',
-        hostname: 'i.ibb.co', // Kept this in case you still need it
+        hostname: 'res.cloudinary.com',
         port: '',
-        pathname: '/**',
+        pathname: '/**', // All Cloudinary images
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co',
+        port: '',
+        pathname: '/**', // Only if you use this host
       },
     ],
   },
