@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'molecor-backend.onrender.com',
+        hostname: 'molecor-backend-pvco.onrender.com',
         port: '',
         pathname: '/**', // All backend images (news, case_studies, certificates, etc.)
       },
